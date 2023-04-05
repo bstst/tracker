@@ -14,7 +14,7 @@ const track = (id, data) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ id, data }),
-    });
+    }).catch((e) => e);
   } catch (e) {
     console.log(e);
     return Promise.resolve();
