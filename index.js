@@ -1,3 +1,5 @@
+const fetch = require("node-fetch");
+
 const track = (id, data) => {
   if (!id) {
     return Promise.reject("id required");
