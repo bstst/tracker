@@ -13,4 +13,4 @@ const track = (data) => {
   }
 };
 
-module.exports = track;
+module.exports = { track };
