@@ -8,7 +8,7 @@ const track = (id, data) => {
     return Promise.reject("data required");
   }
   try {
-    return fetch("https://tracker.saulis.com/track", {
+    return fetch(process.env.TRACKER_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
